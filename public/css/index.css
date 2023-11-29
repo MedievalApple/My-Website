@@ -1,25 +1,22 @@
 .heroshot {
-    transform: translate(18vw, -10vw);
-    display: block;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
     max-width: 25%;
     border-radius: 10%;
+    margin: 5%;
 }
 
 .herotext {
-    margin: 0;
-    top: 50%;
-    left: 20%;
-    right: 40%;
-    transform: translate(-18vw, 12vw);
+    margin: 5%;
     font-size: 300%;
     text-align: center;
     text-shadow: 2px 2px 5px black;
     font-family: 'Cairo Play', sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 :link {
