@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,15 @@
     <title>Medieval Apple</title>
 </head>
 
-<body class="bg">
+<body>
     <div class="content">
 
         <h1>Medieval Apple - (Under Construction)</h1>
 
-        <div class="topnav">
-            <a id="togglenav" onclick="toggleNav()">→</a>
+        <div class="herotext"><a>Welcome To <br> Medieval Apple</a></div>
+        <img class="heroshot" src="/public/assets/logo.png">
+
+        <div class="bottomnav center">
             <a class="active" href="/">Home</a>
             <a href="https://joust.medievalapple.net/">Joust Brigade</a>
             <a href="https://rally.medievalapple.net/">Rally Waffle</a>
@@ -30,48 +32,6 @@
             <!-- <a href="/about.html">About</a> -->
         </div>
 
-        <div id="flex-bar">
-            <div id="right-side-bar">
-                <aside id="nayn">
-                    <div class="center noiframe">
-                        <!-- <iframe id="ytplayer" type="text/html" width="1080" height="270"
-                            src="https://www.youtube.com/embed/2yJgwwDcgV8?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&color=white"
-                            frameborder="0" allowfullscreen>
-                        </iframe>
-                        <iframe id="ytplayer" type="text/html" width="1080" height="270"
-                            src="https://www.youtube.com/embed/2yJgwwDcgV8?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&color=white"
-                            frameborder="0" allowfullscreen>
-                        </iframe>
-                        <iframe id="ytplayer" type="text/html" width="1080" height="270"
-                            src="https://www.youtube.com/embed/2yJgwwDcgV8?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&color=white"
-                            frameborder="0" allowfullscreen>
-                        </iframe> -->
-                    </div>
-                </aside>
-            </div>
-        </div>
-
-        <div class="herotext"><a>Welcome To <br> Medieval Apple</a></div>
-        <img class="heroshot" src="/public/assets/logo.png">
     </div>
-
-    <script>
-        var navOpen = false
-
-        function toggleNav() {
-            if (navOpen) {
-                document.getElementById("nayn").style.width = "0";
-                document.getElementsByClassName("content")[0].style.marginLeft = "0px"
-                navOpen = false;
-                document.getElementById("togglenav").innerHTML = "→";
-            } else {
-                document.getElementById("nayn").style.width = "360px";
-                document.getElementsByClassName("content")[0].style.marginLeft = "360px"
-                navOpen = true;
-                document.getElementById("togglenav").innerHTML = "←";
-            }
-        }
-    </script>
-
 </body>
 </html>
