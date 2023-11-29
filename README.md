@@ -1,2 +1,2 @@
 # My Website
-Its a Website 🤯
+It's a Website 🤯
