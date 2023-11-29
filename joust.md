@@ -1,0 +1,43 @@
+---
+permalink: /joust
+---
+
+<html lang="en" class="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/public/assets/favicon.ico">
+    <meta name="description" content="Welcome to the Medieval Apple Website! The home of all things Medieval Apple">
+    <meta name="keywords" content="Programming, Coding, Youtube, Games, HTML, JavaScript, CSS">
+    <meta property="og:image" content="/public/assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="/public/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@600&display=swap" rel="stylesheet">
+    <title>Medieval Apple</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <h1>Medieval Apple - (Under Construction)</h1>
+
+        <div class="hero">
+            <div class="herotext"><a>Welcome To <br> Joust Brigade</a></div>
+            <img class="heroshot" alt="Medieval Apple Logo" src="/public/assets/logo.png">
+        </div>
+
+        <div class="bottomnav center">
+            <a href="/">Home</a>
+            <a class="active" href="https://joust.medievalapple.net/">Joust Brigade</a>
+            <a href="https://rally.medievalapple.net/">Rally Waffle</a>
+            <a href="https://sprig.hackclub.com/gallery/The_Legend_Of_Sprig">Legend Of Sprig</a>
+            <a href="https://github.com/MedievalApple">Github</a>
+            <a href="https://twitter.com/MedievalAppleMC">Twitter</a>
+            <a href="https://www.youtube.com/@medievalapple">Youtube</a>
+            <!-- <a href="/about.html">About</a> -->
+        </div>
+
+    </div>
+</body>
+</html>
