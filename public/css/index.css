@@ -4,7 +4,10 @@
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 25%;
+    border-radius: 10%;
 }
 
 .herotext {
@@ -62,12 +65,14 @@ h1 {
 /* Change the color of links on hover */
 .bottomnav a:hover {
     background-color: #ddd;
+    border-radius: 10%;
     color: black;
 }
 
 /* Add a color to the active/current link */
 .bottomnav a.active {
     background-color: #992f2f;
+    border-radius: 10%;
     color: white;
 }
 
