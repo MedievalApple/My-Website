@@ -7,15 +7,71 @@
     <meta name="keywords" content="Programming, Coding, Youtube, Games, HTML, JavaScript, CSS">
     <meta property="og:image" content="/public/assets/logo.png">
     <link rel="stylesheet" type="text/css" href="/public/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@600&display=swap" rel="stylesheet">
     <title>Medieval Apple</title>
 </head>
-<body>
-    <h1>Hi I'm Medieval Apple 🍎</h1>
 
-    <a href="https://github.com/MedievalApple">My Github</a> | 
-    <a href="https://joust.medievalapple.net/">Joust Brigade 👑</a> | 
-    <a href="https://rally.medievalapple.net/">Rally Waffle 🧇</a> | 
-    <a href="https://sprig.hackclub.com/gallery/The_Legend_Of_Sprig">The Legend Of Sprig ⚔</a> | 
-    <a href="https://github.com/hackclub/sprig/blob/main/games/The_Legend_Of_Sprig.js">The Legend Of Sprig Source 👩‍💻</a>
+<body class="bg">
+    <div class="content">
+
+        <h1>Medieval Apple - (Under Construction)</h1>
+
+        <div class="topnav">
+            <a id="togglenav" onclick="toggleNav()">→</a>
+            <a class="active" href="/">Home</a>
+            <a href="https://joust.medievalapple.net/">Joust Brigade</a>
+            <a href="https://rally.medievalapple.net/">Rally Waffle</a>
+            <a href="https://sprig.hackclub.com/gallery/The_Legend_Of_Sprig">Legend Of Sprig</a>
+            <a href="https://github.com/MedievalApple">Github</a>
+            <a href="https://twitter.com/MedievalAppleMC">Twitter</a>
+            <a href="https://www.youtube.com/@medievalapple">Youtube</a>
+            <!-- <a href="/about.html">About</a> -->
+        </div>
+
+        <div id="flex-bar">
+            <div id="right-side-bar">
+                <aside id="nayn">
+                    <div class="center noiframe">
+                        <!-- <iframe id="ytplayer" type="text/html" width="1080" height="270"
+                            src="https://www.youtube.com/embed/2yJgwwDcgV8?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&color=white"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <iframe id="ytplayer" type="text/html" width="1080" height="270"
+                            src="https://www.youtube.com/embed/2yJgwwDcgV8?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&color=white"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <iframe id="ytplayer" type="text/html" width="1080" height="270"
+                            src="https://www.youtube.com/embed/2yJgwwDcgV8?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&color=white"
+                            frameborder="0" allowfullscreen>
+                        </iframe> -->
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div class="herotext"><a>Welcome To <br> Medieval Apple</a></div>
+        <img class="heroshot" src="/public/assets/logo.png">
+    </div>
+
+    <script>
+        var navOpen = false
+
+        function toggleNav() {
+            if (navOpen) {
+                document.getElementById("nayn").style.width = "0";
+                document.getElementsByClassName("content")[0].style.marginLeft = "0px"
+                navOpen = false;
+                document.getElementById("togglenav").innerHTML = "→";
+            } else {
+                document.getElementById("nayn").style.width = "360px";
+                document.getElementsByClassName("content")[0].style.marginLeft = "360px"
+                navOpen = true;
+                document.getElementById("togglenav").innerHTML = "←";
+            }
+        }
+    </script>
+
 </body>
 </html>
