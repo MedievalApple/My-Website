@@ -69,6 +69,24 @@ body {
         text-wrap: nowrap;
     }
 
+    .center {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerscroll {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2%;
+    }
+
 }
 
 @media screen and (orientation:portrait) {
@@ -94,6 +112,24 @@ body {
         text-shadow: rgb(0, 0, 0) 1px 0 3px;
         font-size: xx-large;
         text-wrap: nowrap;
+    }
+
+    .center {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerscroll {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        text-wrap: nowrap;
+        align-items: center;
     }
 
 }
@@ -155,6 +191,7 @@ input[type=text] {
     top: 2%;
     left: 1%;
     text-shadow: rgb(0, 0, 0) 1px 0 3px;
+    font-size: x-large;
 }
 
 .topnav a {
@@ -201,11 +238,7 @@ input[type=text] {
     color: white;
 }
 
-.center {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.heroshot {
+    max-width: 100%; 
+    border-radius: 10%;
 }
