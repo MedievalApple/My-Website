@@ -60,10 +60,10 @@ body {
     }
 
     .box {
-        width: 50%;
+        width: 100%;
     }
 
-    .box a {
+    .herotext a {
         text-shadow: rgb(0, 0, 0) 1px 0 3px;
         font-size: xxx-large;
         text-wrap: nowrap;
@@ -108,7 +108,7 @@ body {
         width: 100%;
     }
 
-    .box a {
+    .herotext a {
         text-shadow: rgb(0, 0, 0) 1px 0 3px;
         font-size: xx-large;
         text-wrap: nowrap;
@@ -185,6 +185,10 @@ input[type=text] {
     fill: white;
 }
 
+.hoverlink:hover {
+    text-decoration: underline;
+}
+
 .topnav {
     overflow: hidden;
     position: absolute;
@@ -240,5 +244,5 @@ input[type=text] {
 
 .heroshot {
     max-width: 100%; 
-    border-radius: 10%;
+    border-radius: 20px;
 }
