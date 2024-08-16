@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/public/assets/media_assistant_tester/css/tester.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/public/assets/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="description" content="A Tester for Roku Media Assistant">
+    <meta name="keywords" content="JavaScript, Roku, SmartHome">
+    <meta property="og:image" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Assistant Tester</title>
+</head>
+
+<body>
+    <div class="login">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 5%; gap: 2%;">
+        <img style="max-width: 10%;" src="/public/assets/media_assistant_tester/circle_logo.png">
+        <span style="font-size: xx-large;">Media Assistant Tester</span>
+        </div>
+
+        <div>
+            <label for="ex">Example</label>
+
+            <select class="ex" name="ex" required>
+                <option value="">Custom</option>
+                <option value="v">Video</option>
+                <option value="a">Audio</option>
+                <option value="la">Live Audio</option>
+            </select>
+        </div><br>
+
+        <form id="form">
+            <div>
+                <label for="ip">*Roku IP Adress </label>
+                <input type="text" name="ip" id="ip" placeholder="10.0.0.15" required />
+            </div><br>
+            <div>
+                <label for="id">*Roku Channel ID </label>
+                <input type="text" name="id" id="id" placeholder="dev" value="" required />
+            </div><br>
+            <div>
+                <label for="u">*Media Url: </label>
+                <input type="text" name="u" id="u" placeholder="https://video.mp4" required />
+            </div><br>
+            <div>
+                <label for="media-type">*Media Type:</label>
+
+                <select name="t" id="media-type" required>
+                    <option value="">Please choose Media Type</option>
+                    <option value="v">Video</option>
+                    <option value="a">Audio</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="video-name">Video Name: </label>
+                <input type="text" name="videoName" id="video-name" placeholder="Bad Apple"/>
+            </div><br>
+            <div>
+                <label for="videoFormat">Video Format: </label>
+                <input type="text" name="videoFormat" id="video-format" placeholder="mp4, mkv, hls"/>
+            </div><br>
+            <div>
+                <label for="song-name">Song Name: </label>
+                <input type="text" name="songName" id="song-name" placeholder="Local Elevator"/>
+            </div><br>
+            <div>
+                <label for="artist-name">Artist Name: </label>
+                <input type="text" name="artistName" id="artist-name" placeholder="John Doe"/>
+            </div><br>
+            <div>
+                <label for="album-art">Album Art Url: </label>
+                <input type="text" name="albumArt" id="album-art" placeholder="https://art.png"/>
+            </div><br>
+            <div>
+                <label for="songFormat">Song Format: </label>
+                <input type="text" name="songFormat" id="song-format" placeholder="mp3, flac, aac"/>
+            </div><br>
+            <div>
+                <label for="launched">Channel Already Launched: </label>
+                <input type="checkbox" name="launched" id="launched"/>
+            </div><br>
+            <label style="font-size: small;" for="videoFormat">* Means parameter is required</label><br><br>
+            <div>
+                <button type="submit" value="Play My Media Roku!">Play on Media Assistant</button><br><br>
+            </div>
+        </form>
+
+        <div>
+            <label for="curl">Curl Command: </label>
+            <input type="text" name="curl" id="curl" readonly="" placeholder="curl -d '' 'ipadress'" required /><br><br>
+        </div>
+        <a style="margin-left: 5%; margin-right: 5;"></a>
+        <a title="Media Assistant Home Page" href="https://medievalapple.net/Media-Assistant.html"
+            style="text-decoration: none;">
+            <img style="image-rendering: pixelated;" height="34px" width="34px" src="/public/assets/media_assistant_tester/circle_logo.png">
+        </a>
+    </div>
+
+    <script src="/public/assets/media_assistant_tester/js/requests.js"></script>
+    <script src="/public/assets/media_assistant_tester/js/examples.js"></script>
+</body>
+
+</html>
