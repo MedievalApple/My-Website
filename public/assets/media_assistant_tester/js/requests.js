@@ -19,6 +19,19 @@ form.addEventListener("change", (event) => {
     }
 })
 
+//Launch Request
+async function postData(url = "", data = {}) {
+    const response = await fetch(url, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+    return response.json();
+}
+
 async function sendData() {
     // Associate the FormData object with the form element
     const formData = new FormData(form);
