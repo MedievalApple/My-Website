@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo Play', sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(43, 43, 43);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/public/assets/bg1.jpg');
+}
+
+.dropdown {
+    text-align: right;
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 2%;
+    margin-bottom: 1.5%;
+}
+
+#dropdown-image {
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translate(-95%, -95%);
+    text-align: left;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    background-color: #3333335e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (orientation:landscape) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 900px;
+        text-align: center;
+        border-radius: 10px;
+        padding: 30px 40px;
+        gap: 10%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .herotext a {
+        text-shadow: rgb(0, 0, 0) 1px 0 3px;
+        font-size: xxx-large;
+        text-wrap: nowrap;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerscroll {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2%;
+    }
+
+}
+
+@media screen and (orientation:portrait) {
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 60%;
+        text-align: center;
+        border-radius: 10px;
+        padding: 30px 40px;
+        gap: 90px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .herotext a {
+        text-shadow: rgb(0, 0, 0) 1px 0 3px;
+        font-size: xx-large;
+        text-wrap: nowrap;
+    }
+
+    .center {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerscroll {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        text-wrap: nowrap;
+        align-items: center;
+    }
+
+}
+
+.glass {
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.window {
+    border: 2px solid rgba(255, 255, 255, .2);
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    background-color: #3333335e;
+}
+
+.box p {
+    font-size: x-large;
+    margin: 4%;
+    text-wrap:stable;
+}
+
+button {
+    background-color: #1a1a1a;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /* text-shadow: rgb(0, 0, 0) 1px 0 3px; */
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #2c2c2c;
+}
+
+input[type=text] {
+    background-color: #1a1a1a;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /* text-shadow: rgb(0, 0, 0) 1px 0 3px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+#nameInput {
+    color: white;
+}
+
+.link {
+    fill: white;
+}
+
+.hoverlink:hover {
+    text-decoration: underline;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    text-shadow: rgb(0, 0, 0) 1px 0 3px;
+    font-size: x-large;
+}
+
+.topnav a {
+    text-decoration: none;
+}
+
+/* Add a black background color to the top navigation */
+.bottomnav {
+    border: 2px solid rgba(255, 255, 255, .2);
+    background:transparent;
+    backdrop-filter: blur(10px);
+    background-color: #3333335e;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Style the links inside the navigation bar */
+.bottomnav a {
+    /* background-color: #333; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+    cursor: pointer;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    display: flex;
+}
+
+/* Change the color of links on hover */
+.bottomnav a:hover {
+    background-color: #ff00004f;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.bottomnav a.active {
+    background-color: #ff00006c;
+    border-radius: 10px;
+    color: white;
+}
+
+.heroshot {
+    max-width: 100%; 
+    border-radius: 20px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/public/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/public/assets/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="description" content="Learn more about Medieval Apple">
+    <meta name="keywords" content="Programming, Coding, Youtube, Games, HTML, JavaScript, CSS">
+    <meta property="og:image" content="/public/assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Apple - About</title>
+</head>
+
+<body>
+
+    <h1 class="topnav"><a title="Medieval Apple Home" href="/">Medieval Apple</a> - About</h1>
+
+    <main>
+        <div class="box window">
+            <p>About Me Medieval Apple</p>
+            <p>Just someone who likes programming :D</p>
+
+        </div>
+        <div class="box">
+            <img class="heroshot glass" alt="Medieval Apple Logo" style="background-color: #992f2fd2;" src="/public/assets/logo_clear.png">
+        </div>
+    </main>
+
+    <div class="bottomnav center" style="width: 100%;">
+        <div class="centerscroll">
+            <a href="/">Home</a>
+            <a href="/Media-Assistant.html">Media Assistant</a>
+            <a href="/Rally-Waffle.html">Rally Waffle</a>
+            <a href="/Legend-of-Sprig.html">Legend Of Sprig</a>
+            <!-- <a href="https://sprig.hackclub.com/gallery/The_Legend_Of_Sprig">Legend Of Sprig</a> -->
+            <a class="active" href="/About.html">About</a>
+        </div>
+        <div class="center">
+            <a class="link" title="Medieval Apple - Github" href="https://github.com/MedievalApple">
+                <svg aria-hidden="true" height="34" viewBox="0 0 16 16" version="1.1" width="34">
+                    <path
+                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                    </path>
+                </svg>
+            </a>
+            <a class="link" title="MedievalAppleMC - Twitter" href="https://twitter.com/MedievalAppleMC">
+                <svg height="34" version="1.1" width="34" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                    </path>
+                </svg>
+            </a>
+            <a class="link" title="Medieval Apple - Youtube" href="https://www.youtube.com/@medievalapple">
+                <svg aria-hidden="true" height="34" version="1.1" width="34" viewBox="0 0 68 48">
+                    <path
+                        d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                        fill="#f00">
+                    </path>
+                    <path d="M 45,24 27,14 27,34" fill="#"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="dropdown" title="Change Background">
+        <img src="/public/assets/bg1.jpg" id="dropdown-image" width="25px" height="25px">
+        <div class="dropdown-content">
+            <div>
+                <input title="Castle Background" type="radio" onclick="bgCastle()" id="castle" name="bg" value="castle" />
+                <label for="castle">Castle</label>
+            </div>
+            
+            <div>
+                <input title="Minecraft Background" type="radio" onclick="bgMinecraft()" id="minecraft" name="bg" value="minecraft" />
+                <label for="minecraft">Minecraft</label>
+            </div>
+
+        </div>
+    </div>
+    <script src="/public/js/background.js"></script>
+</body>
+
+</html>
