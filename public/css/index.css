@@ -23,10 +23,8 @@ body {
     text-align: right;
     display: flex;
     position: fixed;
-    right: 0;
-    bottom: 0;
-    margin-right: 2%;
-    margin-bottom: 1.5%;
+    right: 0.5%;
+    bottom: 1%;
 }
 
 #dropdown-image {
