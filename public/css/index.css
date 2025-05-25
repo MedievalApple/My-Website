@@ -8,6 +8,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -40,7 +41,7 @@ body {
     text-align: left;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
-    background:transparent;
+    background: transparent;
     backdrop-filter: blur(10px);
     background-color: #3333335e;
     min-width: 160px;
@@ -60,7 +61,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        height: 70vh;
         width: 900px;
         text-align: center;
         border-radius: 10px;
@@ -77,6 +78,17 @@ body {
         font-size: xxx-large;
         text-wrap: nowrap;
     }
+
+    .heroshot {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .logo {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
 
     .center {
         display: flex;
@@ -96,6 +108,31 @@ body {
         margin-right: 2%;
     }
 
+    .topnavcenter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        background-color: #3333335e;
+        overflow-x: scroll;
+        position: fixed;
+        border-right: 2px solid rgba(255, 255, 255, .2);
+        border-top: 2px solid rgba(255, 255, 255, .2);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        top: 2%;
+        left: 0;
+        z-index: 1;
+    }
+
 }
 
 @media screen and (orientation:portrait) {
@@ -106,11 +143,11 @@ body {
         justify-content: center;
         align-items: center;
         height: 500px;
-        width: 60%;
+        width: 100%;
         text-align: center;
         border-radius: 10px;
         padding: 30px 40px;
-        gap: 90px;
+        gap: 10px;
     }
 
     .box {
@@ -121,6 +158,16 @@ body {
         text-shadow: rgb(0, 0, 0) 1px 0 3px;
         font-size: xx-large;
         text-wrap: nowrap;
+    }
+
+    .heroshot {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .logo {
+        max-width: 60%;
+        border-radius: 20px;
     }
 
     .center {
@@ -139,28 +186,63 @@ body {
         overflow-x: auto;
         text-wrap: nowrap;
         align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .topnavcenter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        background-color: #3333335e;
+        overflow-x: scroll;
+        position: fixed;
+        border-right: 2px solid rgba(255, 255, 255, .2);
+        border-top: 2px solid rgba(255, 255, 255, .2);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 10px;
+        top: 2%;
+        left: 0;
+        z-index: 1;
     }
 
 }
 
 .glass {
-    background:transparent;
+    background: transparent;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, .2);
 }
 
 .window {
     border: 2px solid rgba(255, 255, 255, .2);
-    background:transparent;
+    background: transparent;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     background-color: #3333335e;
 }
 
+.box h1 {
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
 .box p {
     font-size: x-large;
-    margin: 4%;
-    text-wrap:stable;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    text-wrap: stable;
 }
 
 button {
@@ -203,29 +285,30 @@ input[type=text] {
     text-decoration: underline;
 }
 
-.topnav {
-    overflow: hidden;
-    position: absolute;
-    top: 2%;
-    left: 1%;
-    text-shadow: rgb(0, 0, 0) 1px 0 3px;
-    font-size: x-large;
-}
-
+/* Style the links inside the navigation bar */
 .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 16px;
     text-decoration: none;
+    font-size: x-large;
+    cursor: pointer;
+    display: flex;
+    text-wrap: nowrap;
 }
 
 /* Add a black background color to the top navigation */
 .bottomnav {
     border: 2px solid rgba(255, 255, 255, .2);
-    background:transparent;
+    background: transparent;
     backdrop-filter: blur(10px);
     background-color: #3333335e;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     left: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 /* Style the links inside the navigation bar */
@@ -254,9 +337,4 @@ input[type=text] {
     background-color: #ff00006c;
     border-radius: 10px;
     color: white;
-}
-
-.heroshot {
-    max-width: 100%; 
-    border-radius: 20px;
 }

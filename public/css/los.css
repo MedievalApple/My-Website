@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.glogo {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(45, 225, 62);
+}
+
 .sprig {
     background-color: black;
     padding: 40px 40px;
@@ -19,7 +29,6 @@
     }
     
     main {
-        height: 750px;
         width: 70%;
     }
 
