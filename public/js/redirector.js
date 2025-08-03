@@ -7,7 +7,7 @@ const redirectTable = {
         "/ma-privacy-information": "/media-assistant/privacy-information.html",
         "/rally-waffle": "/Rally-Waffle.html",
         "/legend-of-sprig": "/Legend-of-Sprig.html",
-        "/about": "/About"
+        "/about": "/About.html"
     }
 
 if(document.location.pathname == "/404.html" | document.location.pathname == "/404"){
