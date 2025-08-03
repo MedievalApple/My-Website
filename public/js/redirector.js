@@ -13,7 +13,7 @@ if(document.location.pathname == "/404.html" | document.location.pathname == "/4
     errorWindow.style.display = ""
 }
 else{
-    if(redirectTable.has(document.location.pathname)){
+    if(redirectTable[document.location.pathname] != undefined){
         document.location.pathname = redirectTable[document.location.pathname]
     } 
     else{
