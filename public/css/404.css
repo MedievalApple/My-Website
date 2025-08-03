@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.pixel {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+.errorText {
+    font-size: x-large;
+    width: 100%;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation:landscape) {
+
+    .window {
+        height: fit-content;
+        width: 100%;
+        overflow-y: auto;
+    }
+    
+    main {
+        width: 70%;
+    }
+
+}
+
+@media screen and (orientation:portrait) {
+
+    .window {
+        height: fit-content;
+        width: 100%;
+    }
+    
+    main {
+        height: fit-content;
+        margin-top: 10%;
+        margin-bottom: 30%;
+        width: 100%;
+    }
+
+}
