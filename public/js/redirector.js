@@ -9,6 +9,7 @@ const redirectTable = {
     }
 
 if(document.location.pathname == "/404.html" | document.location.pathname == "/404"){
+    document.title = "Medieval Apple - 404"
     topNav.style.display = ""
     errorWindow.style.display = ""
 }
@@ -17,6 +18,7 @@ else{
         document.location.pathname = redirectTable[document.location.pathname]
     } 
     else{
+        document.title = "Medieval Apple - 404"
         topNav.style.display = ""
         errorWindow.style.display = ""
     }
