@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(43, 43, 43);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/public/assets/media_assistant/art_background.png');
+}
+
+.dropdown {
+    text-align: right;
+    display: flex;
+    position: fixed;
+    right: 0.5%;
+    bottom: 1%;
+}
+
+#dropdown-image {
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translate(-95%, -95%);
+    text-align: left;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-color: #3333335e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (orientation:landscape) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        /* width: 900px; */
+        text-align: center;
+        border-radius: 10px;
+        padding: 30px 40px;
+        gap: 2%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .herotext a {
+        text-shadow: rgb(0, 0, 0) 1px 0 3px;
+        font-size: xxx-large;
+        text-wrap: nowrap;
+    }
+
+    .heroshot {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .logo {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+
+    .center {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerscroll {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2%;
+    }
+
+    .topnavcenter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        background-color: #3333335e;
+        overflow-x: auto;
+        width: 25%;
+        position: fixed;
+        border-right: 2px solid rgba(255, 255, 255, .2);
+        border-top: 2px solid rgba(255, 255, 255, .2);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        top: 2%;
+        left: 0;
+        z-index: 1;
+    }
+
+    .topnav img {
+        max-width: 80%; 
+        margin-top: 1%; 
+        margin-bottom: 1%;
+    }
+
+    .window {
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+    }
+    
+    main {
+        /* width: 70%; */
+    }
+
+}
+
+@media screen and (orientation:portrait) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        padding: 30px 40px;
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .herotext a {
+        text-shadow: rgb(0, 0, 0) 1px 0 3px;
+        font-size: xx-large;
+        text-wrap: nowrap;
+    }
+
+    .heroshot {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .logo {
+        max-width: 60%;
+        border-radius: 20px;
+    }
+
+    .center {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerscroll {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        text-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .topnavcenter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        background-color: #3333335e;
+        overflow-x: auto;
+        position: fixed;
+        border-right: 2px solid rgba(255, 255, 255, .2);
+        border-top: 2px solid rgba(255, 255, 255, .2);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 10px;
+        top: 2%;
+        left: 0;
+        z-index: 1;
+    }
+
+    .topnav img {
+        max-width: 60%; 
+        margin-top: 1%; 
+        margin-bottom: 1%;
+    }
+
+    .window {
+        height: 100%;
+        width: 100%;
+    }
+    
+    main {
+        height: fit-content;
+        margin-top: 10%;
+        margin-bottom: 30%;
+        width: 100%;
+    }
+
+}
+
+.glass {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.window {
+    border: 2px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    background-color: #3333335e;
+}
+
+.box h1 {
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.box p {
+    font-size: large;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-wrap: stable;
+}
+
+button {
+    background-color: #1a1a1a;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /* text-shadow: rgb(0, 0, 0) 1px 0 3px; */
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #2c2c2c;
+}
+
+input[type=text] {
+    background-color: #1a1a1a;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /* text-shadow: rgb(0, 0, 0) 1px 0 3px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+#nameInput {
+    color: white;
+}
+
+.link {
+    fill: white;
+}
+
+.hoverlink:hover {
+    text-decoration: underline;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    cursor: pointer;
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+}
+
+/* Add a black background color to the top navigation */
+.bottomnav {
+    border: 2px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-color: #3333335e;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* Style the links inside the navigation bar */
+.bottomnav a {
+    /* background-color: #333; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+    cursor: pointer;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    display: flex;
+}
+
+/* Change the color of links on hover */
+.bottomnav a:hover {
+    background-color: #642c8e4f;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.bottomnav a.active {
+    background-color: #642c8e6c;
+    border-radius: 10px;
+    color: white;
+}

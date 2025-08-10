@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/public/css/ma-setup.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/link-list.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/public/assets/media_assistant/favicon.png">
+    <meta charset="utf-8" />
+    <meta name="description" content="Media Assistant is a utility that allows you to stream/play local and hosted media on your Roku device
+    through Deeplinks.">
+    <meta name="keywords" content="Programming, Coding, Youtube, Games, HTML, JavaScript, CSS">
+    <meta property="og:image" content="/public/assets/media_assistant/hd_splash.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Assistant - HA Setup</title>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <div class="topnavcenter">
+            <a title="Medieval Apple - Media Assistant" href="/Media-Assistant.html">
+                <img src="/public/assets/media_assistant/logo.png"
+                    alt="Media Assistant Logo">
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <div class="box window">
+            <h2 style="font-weight: bold; margin-top: 2%;"><span style="color: #b85bff;">- </span>Setup Roku Integration<span style="color: #b85bff;"> -</span></h2>
+            <h3 style="font-weight: bold; margin-top: 2%;"><span style="color: #b85bff;">Step 1:</span> Add the Roku Integration to your HA Server</h3>
+            <p style="margin-bottom: 2%;">Use the button below or follow the <a href="https://www.home-assistant.io/integrations/roku/">HA Roku Instructions</a></p>
+            <a href="https://my.home-assistant.io/redirect/config_flow_start/?domain=roku" target="_blank"
+                rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/config_flow_start.svg"
+                    alt="Open your Home Assistant instance and start setting up a new integration." /></a>
+            <h3 style="font-weight: bold; margin-top: 2%;"><span style="color: #b85bff;">Step 2:</span> Ensure Home Assistant can talk to your Roku</h3>
+            <p>If you recive this error make sure your Roku is on and that you enabled "Control by mobile apps" in your Roku Settings.</p>
+            <img style="width: 50%; margin-top: 2%;" src="/public/assets/media_assistant/ha_error.png">
+        </div>
+        <div class="box window">
+            <h2 style="font-weight: bold; margin-top: 2%;"><span style="color: #b85bff;">- </span>Configure Roku Intergration<span style="color: #b85bff;"> -</span></h2>
+            <h3 style="font-weight: bold; margin-top: 2%;"><span style="color: #b85bff;">Step 1:</span> Go to the Roku Integration</h3>
+            <p>Select Configure on the device you would <br> like to setup with Media Assistant.</p>
+            <img style="width: 90%; margin-top: 2%;" src="/public/assets/media_assistant/ha_devices.png">
+            <h3 style="font-weight: bold; margin-top: 2%;"><span style="color: #b85bff;">Step 2:</span> Change the App ID to 782875</h3>
+            <p>By defualt the App ID is set to the discontinued PlayOnRoku App for backwards compability with older Roku's.</p>
+            <p>In order to use Media Assistant you have to change it to Media Assistants App ID: 782875</p>
+            <img style="width: 80%; margin-top: 2%;" src="/public/assets/media_assistant/ha_appid.png">
+            <h3 style="font-weight: bold; margin-top: 2%;">For more information</h3>
+            <p>Check out the PlayOnRoku section of the <br> Home Assistant Roku docs: <a href="https://www.home-assistant.io/integrations/roku/#play-on-roku">PlayOnRoku Docs</a></p>
+            
+        </div>
+        <div class="box window">
+            <h2 style="font-weight: bold; margin-top: 2%;"><span style="color: #b85bff;">- </span>Play Some Media :D<span style="color: #b85bff;"> -</span></h2>
+            <h3 style="font-weight: bold; margin-top: 2%;">In the Media tab select your device and some media to play.</h3>
+            <img style="width: 90%; margin-top: 2%;" src="/public/assets/media_assistant/ha_media.png">
+            <h3 style="font-weight: bold; margin-top: 2%;">If everything is setup right your Roku should launch <br> Media Assistant and start playing your media.</h3>
+            <img style="width: 90%; margin-top: 2%;" src="/public/assets/media_assistant/song.jpg">
+            <h3 style="font-weight: bold; margin-top: 2%;">For more information and advanced usage</h3>
+            <p>Check out the Home Assistant Roku docs <br> Roku docs: <a href="https://www.home-assistant.io/integrations/roku/">HA Roku Docs</a></p>
+        </div>
+        
+    </main>
+
+    <div class="bottomnav center" style="width: 100%;">
+        <div class="centerscroll">
+            <a href="/Media-Assistant.html">⬅ Medieval Apple</a>
+            <a class="active" href="/media-assistant/setup.html">Setup</a>
+            <a href="/media-assistant/license.txt">Terms and Conditions</a>
+            <a href="/media-assistant/privacy-info.html">Privacy Info</a>
+            <a href="https://github.com/sponsors/MedievalApple">Donate</a>
+            <a href="https://github.com/MedievalApple/Media-Assistant?tab=readme-ov-file#credits">Credits</a>
+            <a href="https://github.com/MedievalApple/Media-Assistant/issues">Report Issue</a>
+            <a class="link" title="Media Assistant - Github" href="https://github.com/MedievalApple/Media-Assistant">
+                <svg aria-hidden="true" height="34" viewBox="0 0 16 16" version="1.1" width="34">
+                    <path
+                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

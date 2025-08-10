@@ -3,10 +3,14 @@ errorWindow = document.getElementById("window")
 
 const redirectTable = {
         "/media-assistant": "/Media-Assistant.html",
+        "/ma": "/Media-Assistant.html",
+        "/ma-setup": "/media-assistant/setup.html",
         "/public/licenses/media-assistant-license": "/media-assistant/license.txt",
-        "/ma-privacy-information": "/media-assistant/privacy-information.html",
+        "/ma-privacy-information": "/media-assistant/privacy-info.html",
         "/rally-waffle": "/Rally-Waffle.html",
+        "/rw": "/Rally-Waffle.html",
         "/legend-of-sprig": "/Legend-of-Sprig.html",
+        "/los": "/Legend-of-Sprig.html",
         "/about": "/About.html"
     }
 
