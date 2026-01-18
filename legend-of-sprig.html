@@ -67,7 +67,12 @@
         </div>
         <div class="box">
         <div class="sprigbox">
-            <canvas class="sprig" width='500' height='400' id='canvas' tabindex='0'></canvas>
+            <div id="sprig">
+                <div class="sprigoverlay">
+                    <a title="Fullscreen" id="fullbutton" onclick="fullscreen()">⤢</a>
+                    <canvas class="sprig" width='500' height='400' id='canvas' tabindex='0'></canvas>
+                </div>
+            </div>
             <a href="https://sprig.hackclub.com/gallery/The_Legend_Of_Sprig"
                 style="font-size: medium; text-decoration: none;">
                 <span class="hoverlink" style="margin-right: 1%;">View the Source</span>
@@ -137,6 +142,12 @@
     </div>
     
     <script src="/public/js/background.js"></script>
+
+    <script>
+        function fullscreen() {
+            document.getElementById("sprig").classList.toggle('sprigfull');
+        }
+    </script>
 
     <script type='module'>
         import { webEngine } from 'https://esm.sh/sprig@1/web'
