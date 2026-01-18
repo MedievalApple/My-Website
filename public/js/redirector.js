@@ -2,16 +2,16 @@ topNav = document.getElementById("topnav")
 errorWindow = document.getElementById("window")
 
 const redirectTable = {
-        "/media-assistant": "/Media-Assistant.html",
-        "/ma": "/Media-Assistant.html",
+        "/Media-Assistant": "/media-assistant.html",
+        "/ma": "/media-assistant.html",
         "/ma-setup": "/media-assistant/setup.html",
         "/public/licenses/media-assistant-license": "/media-assistant/license.txt",
         "/ma-privacy-information": "/media-assistant/privacy-info.html",
-        "/rally-waffle": "/Rally-Waffle.html",
-        "/rw": "/Rally-Waffle.html",
-        "/legend-of-sprig": "/Legend-of-Sprig.html",
-        "/los": "/Legend-of-Sprig.html",
-        "/about": "/About.html"
+        "/Rally-Waffle": "/rally-waffle.html",
+        "/rw": "/rally-waffle.html",
+        "/Legend-of-Sprig": "/legend-of-sprig.html",
+        "/los": "/legend-of-sprig.html",
+        "/About": "/about.html"
     }
 
 if(document.location.pathname == "/404.html" | document.location.pathname == "/404"){
